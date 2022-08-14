@@ -1942,7 +1942,7 @@ def disco(args, folders, frame_num, clip_models, init_scale, skip_steps, seconda
                                     blend_factor = (1) / int(args.turbo_steps)
                                     # newFrame = cv2.imread("prevFrame.png")  # This is already updated..
                                     newFrame = cv2.imread(f"{args.batchFolder}/prevFrame.png")
-                                    prev_frame_warped = cv2.imread("prevFrameScaled.png")
+                                    prev_frame_warped = cv2.imread(f"{args.batchFolder}/prevFrameScaled.png")
                                     blendedImage = cv2.addWeighted(
                                         newFrame,
                                         blend_factor,
